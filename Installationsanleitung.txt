@@ -1,0 +1,41 @@
+Sono-DavidX
+===========
+
+
+
+Am Linux-Server
+==================
+- sono.sh nach /home/david kopieren
+- Ausführungsrechte setzen
+- In /etc/hosts den Sono-WinPC eintragen, z.B.:
+      192.168.0.40   platz02
+- In DavidX den Datenexport (Patientendaten sowie DAV_LID aktivieren
+- In DavidX-Optionen Menü-Eintrag einrichten:
+      Name = Sono  (beliebig)
+      Programmaufruf = /home/david/sono.sh 
+
+Hinweis: Falls der Programmaufruf an den WinPC-Rexserver nicht funktioniert,
+         muss in DavidX der Programmstart freigeschaltet werden!
+
+
+
+Am WinPC
+==================
+
+- Rexserver dauerhaft starten
+- Netzlaufwerk W: einrichten
+
+Ordner sono nach C:\david kopieren
+Dieser Ordner enthält auch einen bereits konfigurierten Irvanview.
+
+Im Ordner sono/USB-Fußschalter liegt eine HIDKEYBOARD-2.31 .exe zum konfigurieren des Fußschalters:
+  USB-Fußschalter aufstecken
+  Programm HIDKEYBOARD-2.31.exe ausführen
+  Im Feld "Key" (rechts) Zahl 2  auswählen (bei zwei Fußschaltern)
+  IM Feld "Group Key" Ctrl auswählen
+  in das Feld für Schalter 1 klicken, F11 drücken
+  das gleiche nochmal für Schalter 2 ausführen (Key 2)
+  unten auf Save klicken
+
+fertig.
+
